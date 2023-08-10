@@ -51,6 +51,6 @@ app.post("/send", async (req, res) => {
   res.json(info);
 });
 
-app.listen(4000, () => {
+app.listen(process.env.PORT || 4000, () => {
   console.log("App listening on port 4000");
 });
